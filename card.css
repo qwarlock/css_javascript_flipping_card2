@@ -1,11 +1,14 @@
-
-
+:root{
+	--darkcolor: rgb(150,150,0);
+	--lightcolor: orange;	
+}
 
 .maincontainer{
 	position: relative;
 	width: 250px;
 	height: 320px;
 	perspective: 1000px;
+	margin: 150px auto;
 }
 
 .card{
@@ -16,7 +19,13 @@
 	transition: all  2s ease;
 }
 
+.card-template{
+	border-radius: 16px;
+}
+
 .card-front{
+	display: flex;
+	flex-direction: column;
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -24,6 +33,21 @@
 	backface-visibility: hidden;
 }
 
+.card-front > p{
+	background-color: green;
+	width: 100%;
+	text-align: center;
+	font-size: 25;
+}
+
+
+.card-header{
+	position: absolute;
+	height: 200px;
+	width: 100%;
+	background-image: linear-gradient(to bottom, var(--darkcolor), var(--lightcolor));
+
+}
 
 .card-back{
 	position: absolute;
