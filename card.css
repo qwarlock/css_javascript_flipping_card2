@@ -1,6 +1,6 @@
 :root{
-	--darkcolor: rgb(150,150,0);
-	--lightcolor: orange;	
+	--darkcolor: #FFCF00;
+	--lightcolor: #FF4880;	
 }
 
 .maincontainer{
@@ -29,7 +29,7 @@
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-color: yellow;
+	background-image: linear-gradient(to bottom right,var(--darkcolor), var(--lightcolor));
 	backface-visibility: hidden;
 }
 
@@ -40,22 +40,45 @@
 	font-size: 25;
 }
 
-
 .card-header{
 	position: absolute;
 	height: 200px;
 	width: 100%;
-	background-image: linear-gradient(to bottom, var(--darkcolor), var(--lightcolor));
+	background-image: linear-gradient(to bottom right,var(--darkcolor), var(--lightcolor));
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
 
+.facepic{
+	width: 100px;
+	height:100px;
+	display: block;
+	padding: 10px;
+	border: 3px solid white;
+	margin: 10px;
+	border-radius: 50%;
+}
+
+.header-text{
+	display: block;
+	text-align: center;i
+	font-size: 25;
 }
 
 .card-back{
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-color: red;
+	z-index: -1;
 	backface-visibility: hidden;
+	background-color: #FFF;
 	transform: rotateY(180deg);
+	box-shadow: 0px 3px 18px 3px rgb(0,0,0,0.2); 
+	display: flex;
+	flex-direction: column;
 }
 
 .card:hover{

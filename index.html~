@@ -7,16 +7,16 @@
 		<div class="maincontainer">
 			<div class="card">
 				<div class="card-template card-front">
-					<p>This is the front</>
+					<p>This is the front</p>
 				</div>	
 				<div class="card-back card-template">
 					<div class="card-template card-header"> 
-					
+						<img src="./kitten.jpeg" alt="kitten" class="facepic" />	
 
-						<p>This is the back</p>
+						<div class="header-text">
+							Killer Kitty!
+						</div>
 					</div>
-
-					<p>This is the back</p>
 				</div>
 			</div>
 
